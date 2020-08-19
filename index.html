@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MouseHover</title>
+</head>
+<body>
+  <script>
+    window.addEventListener('mousemove', function(e) {
+      var x = e.x;
+      var y = e.y;
+      document.querySelector('body').onclick =
+        document.querySelector('body').style.backgroundColor = "#" + x + "" + y;
+    })
+  </script>
+</body>
+</html>
